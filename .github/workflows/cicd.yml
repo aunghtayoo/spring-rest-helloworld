@@ -32,11 +32,11 @@ jobs:
     - name: Maven build
       run: mvn clean install
             
-    # - name: Login to dockerhub
-    #   uses: docker/login-action@v3
-    #   with:
-    #     username: aunghtayoo
-    #     password: dckr_pat_FdcIF56xmRnnRj6psNDmiOM5_iQ      
+    - name: Login to dockerhub
+      uses: docker/login-action@v3
+      with:
+        username: aunghtayoo
+        password: dckr_pat_FdcIF56xmRnnRj6psNDmiOM5_iQ      
         
     # - name: Build and Push Image
     #   uses: docker/build-push-action@v5
