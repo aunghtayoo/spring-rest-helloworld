@@ -1,0 +1,7 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /api
+mysql:
+  username: root
+  password: root
