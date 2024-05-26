@@ -35,8 +35,8 @@ jobs:
     - name: Login to dockerhub
       uses: docker/login-action@v3
       with:
-        username: aunghtayoo
-        password: dckr_pat_FdcIF56xmRnnRj6psNDmiOM5_iQ      
+        username: ${{ github.actor }}
+        password: ${{secrets.dockerhub_token}}   
         
     - name: Build and Push Image
       uses: docker/build-push-action@v5
