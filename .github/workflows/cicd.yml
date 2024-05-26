@@ -38,9 +38,9 @@ jobs:
         username: aunghtayoo
         password: dckr_pat_FdcIF56xmRnnRj6psNDmiOM5_iQ      
         
-    # - name: Build and Push Image
-    #   uses: docker/build-push-action@v5
-    #   with:
-    #     context: .
-    #     push: true
-    #     tags: aunghtayoo/spring-rest-helloworld:${{ steps.tag-version.outputs.version }}
+    - name: Build and Push Image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: true
+        tags: aunghtayoo/spring-rest-helloworld:${{ steps.tag-version.outputs.version }}
